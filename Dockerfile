@@ -13,6 +13,7 @@ RUN set -x \
             make \
         && apk add --no-cache --virtual .runtime-deps \
             perl \
+            openssh-client \
         && wget -O pgbadger.tar.gz "$PGBADGER_DOWNLOAD_URL" \
         && echo "$PGBADGER_DOWNLOAD_SHA256 *pgbadger.tar.gz" | sha256sum -c - \
         && mkdir -p /usr/src/pgbadger \
