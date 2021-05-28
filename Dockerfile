@@ -1,7 +1,7 @@
-FROM alpine:3.5
+FROM alpine:3.12
 
 ENV PGBADGER_VERSION 9.1
-ENV PGBADGER_DOWNLOAD_URL https://github.com/dalibo/pgbadger/archive/v9.1.tar.gz
+ENV PGBADGER_DOWNLOAD_URL https://github.com/darold/pgbadger/archive/v9.1.tar.gz
 ENV PGBADGER_DOWNLOAD_SHA256 2fd7166d74692cc7d87f00b37cc5c7c1c6eddf156372376d382a40f67d694011
 
 RUN set -x \

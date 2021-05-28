@@ -2,7 +2,7 @@
 set -eu
 
 aliases='9 latest'
-tag='mattrobenolt/pgbadger'
+tag='us.gcr.io/sentryio/pgbadger'
 
 fullVersion=$(awk '$1 == "ENV" && $2 == "PGBADGER_VERSION" { print $3; exit }' Dockerfile)
 
